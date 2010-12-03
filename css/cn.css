@@ -1,3 +1,8 @@
+.glance_box_in_page>h4 {
+	font-weight: bold;
+	color: #222;
+}
+
 img#wpstats{display:none}
 
 .story {
