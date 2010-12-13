@@ -42,18 +42,18 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
      	
      	if ($cn_byline3) { //We have three bylines
      		
-		echo ', ';
+		echo ',<br />';
      	
      	echo $cn_byline2[0];
      	
-		echo ' and ';
+		echo '<br />and ';
      	
      	echo $cn_byline3[0];
      	
      	}
      	
      	if ($cn_byline2 && !$cn_byline3) { //Two bylines
-     		echo ' and ';
+     		echo '<br />and ';
      	
      	echo $cn_byline2[0];
      	
