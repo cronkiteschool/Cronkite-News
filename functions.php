@@ -19,6 +19,16 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 
 load_theme_textdomain('carrington-jam');
 
+function disable_autop() {
+global $post;
+$disable_autop_var = get_post_meta($post->ID, 'disable_autop', TRUE);
+//var_dump(get_post_meta($post->ID,'disable_autop', TRUE));
+if ( !empty( $disable_autop_var ) ) {
+remove_filter('the_content', 'wpautop');
+}
+}
+add_action ('loop_start', 'disable_autop');
+
 //define('CFCT_DEBUG', true);
 define('CFCT_PATH', trailingslashit(TEMPLATEPATH));
 
