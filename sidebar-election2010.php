@@ -80,8 +80,6 @@ QT_WriteOBJECT_XHTML('http://cronkitenews.jmc.asu.edu/assets/video/poster/2010el
      </form>
      </div> <!-- end searchbox -->
 
-<?php cfct_misc('sidebarlinks'); ?>
-
     </div><!-- sidebar -->
 
 

@@ -22,7 +22,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <!-- Sidebar for inner pages -->
 
-
 <div class="span-7 last sidebar_inner">
 
 <?php include 'youtube.php'; ?>
@@ -332,10 +331,5 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       ?>       
       
       <!-- END GLANCE BOX -->
-
-
-<?php cfct_misc('the-latest'); ?>
-<?php cfct_misc('sidebarlinks'); ?>
-
 
     </div><!-- sidebar -->

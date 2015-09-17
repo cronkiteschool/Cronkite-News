@@ -83,8 +83,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
      </form>
      </div> <!-- end searchbox -->
 
-<?php cfct_misc('sidebarlinks'); ?>
-
     </div>  <!-- sidebar -->
     <?php
 			$sidebar_ajax_url = 'http://'.$_SERVER[HTTP_HOST].'/'.'election-2012-sidebar'.'/';

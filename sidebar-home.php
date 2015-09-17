@@ -12,8 +12,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <?php include 'youtube.php'; ?>
 
-
-
 	<div class="special_reports_header">
 		<div class="special_reports_header_top"><div></div></div>
 			<div class="special_reports_special"><a href="<?php bloginfo('url'); ?>/special-reports-by-month/">SPECIAL</a></div>
@@ -71,14 +69,5 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		</div>
 
       <?php endwhile; ?>
-      
-      
-      
-<?php cfct_misc('the-latest-home'); ?>
-      
-
-
-<?php cfct_misc('sidebarlinks-home'); ?>
-
 
     </div><!-- sidebar -->

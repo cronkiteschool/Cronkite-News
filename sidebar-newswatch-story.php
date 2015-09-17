@@ -333,9 +333,5 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       ?>       
       
       <!-- END GLANCE BOX -->
-      
-<?php cfct_misc('the-latest'); ?>
-<?php cfct_misc('sidebarlinks'); ?>
-
 
     </div><!-- sidebar -->
