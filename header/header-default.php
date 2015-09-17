@@ -67,17 +67,14 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		);
 	</script>
 	
-	
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'carrington-jam' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
-	
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url') ?>" />
 	
 	<meta name="viewport" content="width=960" />
 
 	<!-- Start wp_head -->
-<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
-<script src="<?php bloginfo('template_directory'); ?>/js/quester/fullscreen.js" type="text/javascript"></script>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
+	<script src="<?php bloginfo('template_directory'); ?>/js/quester/fullscreen.js" type="text/javascript"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/quester/gallery.js" type="text/javascript"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.li-scroller.1.0.js" type="text/javascript"></script>
 	<?php wp_head(); ?>
@@ -86,12 +83,11 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <body>
 
-
 <?php cfct_misc('facebook-googleplus'); ?>
 
   <div class="container"> <!-- showgrid -->
     <div class="span-24 last header">
-      <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/masthead.gif" width="774" height="85" alt="Cronkite Header" /></a>
+      <a href="http://cronkitenews.azpbs.org"><img src="<?php bloginfo('template_directory'); ?>/img/masthead.gif" width="774" height="85" alt="Cronkite Header" /></a>
     </div><!-- header -->
     
 <div class="span-24 last linkbar">
@@ -113,15 +109,13 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 </div>
 
 	<div style="padding-top: 8px;">
-	<a href="<?php bloginfo('url'); ?>">HOME</a>
+	<a href="http://cronkitenews.azpbs.org">HOME</a>
 	<a href="<?php bloginfo('url'); ?>/about/">ABOUT</a>
 	<a href="<?php bloginfo('url'); ?>/archives-by-month/">STORIES</a>
 	<a href="<?php bloginfo('url'); ?>/newswatch-archive/">NEWSCAST</a>
 	<a href="http://news21.com">NEWS21</a>
 	<a href="http://cronkite.asu.edu">CRONKITE</a>
 	</div>
-	
-
 
 </div><!-- linkbar -->
     <div class="span-24"> <!-- wrapper for main content -->

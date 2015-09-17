@@ -74,7 +74,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
   <div class="container"> <!-- showgrid -->
     <div class="span-24 last header">
-      <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/masthead.gif" width="774" height="85" alt="Cronkite Header" /></a>
+      <a href="http://cronkitenews.azpbs.org"><img src="<?php bloginfo('template_directory'); ?>/img/masthead.gif" width="774" height="85" alt="Cronkite Header" /></a>
     </div><!-- header -->
     
 <div class="span-24 last linkbar">

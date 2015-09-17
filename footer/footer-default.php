@@ -17,9 +17,7 @@
 
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); } ?>
- 
 
-	
  <div class="span-24 last footer">
       <div class="span-4 contactbox"> <!-- contactbox -->
       	<table class="contactus" style="margin-left: -30px;">
@@ -32,7 +30,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); } ?>
       	</td></tr>
       	<tr>
       	<td>
-      	<a href="<?php bloginfo('url'); ?>/feed"><img src="<?php bloginfo('template_directory'); ?>/img/logo-rss.gif" width="45" height="45" alt="RSS" /><br /></a>RSS
+      	<a href="http://cronkitenews.azpbs.org/feed"><img src="<?php bloginfo('template_directory'); ?>/img/logo-rss.gif" width="45" height="45" alt="RSS" /><br /></a>RSS
       	</td>
 		<td>
       	<a href="mailto:cronkitenews@asu.edu"><img src="<?php bloginfo('template_directory'); ?>/img/logo-email.gif" width="45" height="45" alt="E-mail" /><br /></a>Contact
@@ -102,32 +100,26 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); } ?>
       	<a href="http://www.yumasun.com/">The Sun (Yuma)</a><br />
       	</td>
 		</tr>
-		
+
 		</table>
-		
+
       </div> <!-- newssourcebox -->
 
-  
-
             <div class="span-24 last"> <!-- copyright -->
-      			
-      
+
 			   <div class="footerbox_bottom_wrapper">
-                   
+ 
 		   <div class="footerbox_bottom"><p class="copyright">WALTER CRONKITE SCHOOL OF JOURNALISM AND MASS COMMUNICATION AT ARIZONA STATE UNIVERSITY <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: sub;" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a></p></div>
-		 
+ 
 		  </div>
       </div> <!-- copyright -->
    </div> <!-- footer --> 
 
- 
-
   </div> <!-- wrapper for main content -->
-  
-<?php wp_footer(); ?>
-    
-  </div><!-- container -->  
  
+<?php wp_footer(); ?>
+ 
+  </div><!-- container -->  
  
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
