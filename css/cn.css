@@ -251,7 +251,7 @@ span.overlay {
 	font-style: normal;
 	color: black;
 	margin-bottom: 0;
-	font-size: 13px;
+	font-size: 11px;
 }
 
 .photo_credit {
@@ -266,6 +266,17 @@ span.overlay {
   font-style: italic;
   margin-bottom: 20px;
   color: #888;
+}
+.esidebar_image {
+  position: relative;
+  width: 270px;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #888;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  background-color:#eeeeee;
 }
 
 .sidefirst {
@@ -442,7 +453,7 @@ span.overlay {
 .viewmore a:hover { color: #d1242a; }
 .othernews_box { /*padding-left: 10px;*/ }
 .searchbox { 
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 }
 .searchbox p {
   font-size: 12px;
@@ -544,6 +555,18 @@ p.othernews a {
 	left: 20px;
 	top: 180px;
 }
+
+.mainimage {
+	position: relative;
+	height: 270px;
+}
+
+.mainimage .overlay {
+	position: absolute;
+	left: 20px;
+	top: 190px;
+}
+
 .pushmedown { padding-top: 40px; }
 
 .newswatch_hed {
@@ -604,16 +627,22 @@ p.othernews a {
 margin-top: 10px;
 }
 .linkbar {
-  text-align: center;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 10px;
   padding-top: 5px;
-  background: #25428e;
+  padding-bottom: 5px;
+  background: black;
 }
 
 .linkbar a {
 	border: none;
 	outline: none;
+	font-size: 16px;
+	color: white;
+	padding-right: 0;
+	padding-left: 10px;
+	text-decoration: none;
 }
 .topstoriesgraphic {
   font-size: 12px;
@@ -668,6 +697,7 @@ margin-top: 10px;
 }
 
 .mainimage {
+  position: relative;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -740,4 +770,166 @@ margin-top: 10px;
 	outline: none;
 }
 
+.topstories_overlay {
+	position: relative;
+	height: 172px;
+}
+
+.topstories_overlay .overlay {
+	position: absolute;
+	left: 20px;
+	top: 120px;
+}
+
 .test { background: red; }
+
+#election-wrapper {
+   width: 700px;	
+}
+
+#election-main {
+   width: 650px;
+   border: 1px solid #DDDDDD;
+   margin-bottom: 20px;
+   height: 230px;
+}
+
+#election-main left {
+	float: left;
+	width: 230px;
+}
+
+#election-main right {
+	float: right;
+}
+
+#election-left {
+	width:320px;
+	float:left;
+}
+
+#election-left a {
+	text-decoration: none;
+	font-weight:normal;
+}
+
+#election-left h5 {
+	color: #D1242A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    text-decoration: none;
+	text-transform:uppercase;
+}
+
+#election-right {
+	width:320px;
+	float:right;
+	margin-right: 30px;
+    padding-right: 5px;
+}
+
+#election-right h5 {
+	color: #D1242A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    text-decoration: none;
+	text-transform:uppercase;
+}
+
+#election-left p {
+	margin: 0 0 1em;
+}
+
+#election-right p {
+	margin: 0 0 1em;
+}
+
+#election-right a {
+	text-decoration: none;
+	font-weight:normal;
+}
+
+.electionsearchbox {
+    padding-bottom: 10px;
+}
+
+.electionsidefirst {
+    border-top: 1px solid #DDDDDD;
+    padding-top: 10px;
+}
+
+.electionsearchbox p {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    text-decoration: none;
+	color: #D1242A;
+}
+
+.electionmap h5 {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    text-decoration: none;
+	color: #D1242A;
+}
+
+.etopstories_image {
+    float: left;
+    padding: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.etopstories_hed {
+    color: black;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: -180px;
+    position: relative;
+    width: 410px;
+	margin-left:20px;
+}
+
+.etopstories_hed a {
+    border: medium none;
+    color: black;
+    margin-top: 0;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.etopstories_byline {
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: -130px;
+    position: relative;
+    width: 410px;
+}
+
+.estory {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: -90px;
+    position: relative;
+    width: 410px;
+}

@@ -10,6 +10,10 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <div class="span-5 last sidebar">
 
+<?php include 'youtube.php'; ?>
+
+
+
 	<div class="special_reports_header">
 		<div class="special_reports_header_top"><div></div></div>
 			<div class="special_reports_special"><a href="<?php bloginfo('url'); ?>/special-reports-by-month/">SPECIAL</a></div>
@@ -70,43 +74,11 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       
       
       
-      <div class="othernews_box">
-      	<p class="subhed">THE LATEST</p>
-
-	 <?php query_posts('&showposts=5&cat=-9,-10,-11,-12,-13'); ?>
-  <?php while (have_posts()) : the_post(); ?>
-		<p class="othernews"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-		<?php //Do we have video?
-			$values = get_post_custom_values('video_file');			
-			if ($values) { //There's a video
-				echo '<a href="'. $values[0] .'" rel="shadowbox;height=360;width=700">&nbsp;';
-			   echo '<img src="';
-			   echo bloginfo('template_directory');
-			   echo '/img/icon-video.gif" width="14" height="8" alt="Watch video" /></a>';
-			}
-		?>
-		
-		
-		
-		</p>
-      	
-      	 <?php endwhile; ?>
-      	 
-      	<p class="viewmore"><a href="<?php bloginfo('url'); ?>/archives/"><b>VIEW MORE STORIES</b></a></p>
-      	
-      </div> <!-- othernews -->
+<?php cfct_misc('the-latest-home'); ?>
       
-          <div class="searchbox" style="margin-left: 0; padding-left: 0;">
-    <p>SEARCH</p>
-    <form id="searchform" method="get" action="<?php bloginfo('url'); ?>/index.php">
-      <div>
-         <input type="text" name="s" id="s" style="width: 180px;" /><br />
-         <input type="submit" value="Search" />
-      </div>
-     </form>
-     </div> <!-- end searchbox -->
 
-<?php cfct_misc('sidebarlinks'); ?>
+
+<?php cfct_misc('sidebarlinks-home'); ?>
 
 
     </div><!-- sidebar -->

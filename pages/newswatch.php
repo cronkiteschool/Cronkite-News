@@ -10,9 +10,9 @@ get_header();
 <div class="span-15 append-2 archives">
 
 
-<h1 class="singlehed" style="float: left; margin-bottom: 10px;">Past NewsWatch Newscasts</h1>
+<h1 class="singlehed" style="float: left; margin-bottom: 10px;">Past Newscasts</h1>
 <img src="<?php bloginfo('template_directory'); ?>/img/studio.jpg" width="250" alt="Cronkite NewsWatch studio" style="float: right; padding-left: 20px;"/>
-<h4 style="font-size: 14px; padding-bottom: 10px;">Cronkite NewsWatch, the award-winning<br /> 30-minute nightly newscast produced by Cronkite students, airs weekdays on KAET 8.3 (COX 88)<br /> at 4:30 p.m. and 8 p.m.</h4>
+<h4 style="font-size: 14px; padding-bottom: 10px; clear: left;">Cronkite News, the award-winning 30-minute nightly newscast produced by students of the Walter Cronkite School of Journalism and Mass Communication, airs weekdays on KAET 8.1 (COX 8) at 5 p.m. and 8.3 (COX 88) at 7:30 p.m.</h4>
 
 
 

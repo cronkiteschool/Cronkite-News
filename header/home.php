@@ -30,13 +30,21 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 	  <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
 	  <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon-129.png" />
 	  
+	  <!-- Bow down to our Facebook masters --> 
+		<meta property="og:title" content="Cronkite News" />  
+		<meta property="og:description" content="Cronkite NewsWatch and News Service (CNS) at Arizona State University (ASU) provide full, multimedia coverage, including video reports and a daily newscast, of state news, government, politics and weather. Look to Cronkite News for breaking and in-depth coverage of critical public policy issues such as immigration/SB1070/employer sanctions, action by state agencies and the governor’s office, wildlife, the environment/climate change and Latino/Hispanic issues." />  
+		<meta property="og:type" content="website" />  
+		  <meta property="og:image" content="<?php bloginfo('template_directory'); ?>/img/favicon-129.png" /> 	  
+	  <!-- End Facebook OG tags -->
+	  	  
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/screen.css" type="text/css" media="screen, projection" />
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/print.css" type="text/css" media="print" />
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cn.css" type="text/css" media="screen, projection" />
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/li-scroller.css" type="text/css" media="screen" /> 
 	  <!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 	  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.css" />
-	 
+	     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+	     	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.li-scroller.1.0.js" type="text/javascript"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.js"></script>
 	<script type="text/javascript">
 		Shadowbox.init(
@@ -58,6 +66,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 	<!-- Start wp_head -->
 	<?php wp_head(); ?>
+
 	<!-- End wp_head -->
 </head>
 
@@ -67,14 +76,34 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
     <div class="span-24 last header">
       <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/masthead.gif" width="774" height="85" alt="Cronkite Header" /></a>
     </div><!-- header -->
-    <div class="span-24 last linkbar">
-     
-<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/nav/home.jpg" width="120" height="30" alt="Home" /></a>
-<a href="<?php bloginfo('url'); ?>/about/"><img src="<?php bloginfo('template_directory'); ?>/img/nav/about.jpg" width="120" height="30" alt="About Cronkite News" /></a>
-<a href="<?php bloginfo('url'); ?>/archives/"><img src="<?php bloginfo('template_directory'); ?>/img/nav/stories.jpg" width="120" height="30" alt="Stories" /></a>
-<a href="<?php bloginfo('url'); ?>/recent-newswatch-newscasts/"><img src="<?php bloginfo('template_directory'); ?>/img/nav/newswatch.jpg" width="120" height="30" alt="Recent NewsWatch Newscasts" /></a>
-<a href="http://asu.news21.com"><img src="<?php bloginfo('template_directory'); ?>/img/nav/news21.jpg" width="120" height="30" alt="ASU News21" /></a>
-<a href="http://cronkite.asu.edu"><img src="<?php bloginfo('template_directory'); ?>/img/nav/cronkite.jpg" width="120" height="30" alt="Cronkite School" /></a>
-<a href="<?php bloginfo('url'); ?>/contact-cronkite-news"><img src="<?php bloginfo('template_directory'); ?>/img/nav/contact.jpg" width="120" height="30" alt="Contact Cronkite News" /></a>
-    </div><!-- linkbar -->
-    <div class="span-24"> <!-- wrapper for main content -->
+    
+<div class="span-24 last linkbar">
+
+<div style="float: right; width: 300px;">
+<script>
+  (function() {
+    var cx = '003867095565438658128:1blfwbkqody';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+</div>
+
+	<div style="padding-top: 8px;">
+	<a href="<?php bloginfo('url'); ?>/about/">ABOUT</a>
+	<a href="<?php bloginfo('url'); ?>/archives-by-month/">STORIES</a>
+	<a href="<?php bloginfo('url'); ?>/newswatch-archive/">NEWSCAST</a>
+	<a href="http://news21.com">NEWS21</a>
+	<a href="http://cronkite.asu.edu">CRONKITE</a>
+	</div>
+	
+
+
+</div><!-- linkbar -->
+<div class="span-24"> <!-- wrapper for main content -->

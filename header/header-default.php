@@ -30,9 +30,31 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 	  <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
 	  <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon-129.png" />
 	  
+	<!-- Bow down to our Facebook masters -->
+		<meta property="og:url" content="<?php the_permalink() ?>"/>  
+		<meta property="og:title" content="<?php single_post_title(''); ?>" />  
+		<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />  
+		<meta property="og:type" content="article" /> 
+		<?php //Find an image to use
+		$shareimage = 0;
+		$shareimage = get_post_custom_values('large_image');
+		if ($shareimage == 0) { // No large image
+			$shareimage = get_post_custom_values('small_image');
+		}
+		if ($shareimage == 0) { // No small image
+			$shareimage = get_post_custom_values('video_poster_image');
+		}
+		if ($shareimage == 0) { // No video poster so use generic
+			$shareimage[0] = get_bloginfo('template_directory') . '/img/favicon-129.png';
+		}
+		echo '<meta property="og:image" content="' . $shareimage[0] . '" />';
+		?>		  
+	  <!-- End Facebook OG tags -->
+	  
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/screen.css" type="text/css" media="screen, projection" />
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/print.css" type="text/css" media="print" />
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cn.css" type="text/css" media="screen, projection" />
+		  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/quester.css" type="text/css" media="screen, projection" />
 	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/li-scroller.css" type="text/css" media="screen" /> 
 	  <!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 	  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.css" />
@@ -53,25 +75,53 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 	<meta name="viewport" content="width=960" />
 
 	<!-- Start wp_head -->
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
+<script src="<?php bloginfo('template_directory'); ?>/js/quester/fullscreen.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/quester/gallery.js" type="text/javascript"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.li-scroller.1.0.js" type="text/javascript"></script>
 	<?php wp_head(); ?>
 	<!-- End wp_head -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
+
+
+<?php cfct_misc('facebook-googleplus'); ?>
 
   <div class="container"> <!-- showgrid -->
     <div class="span-24 last header">
       <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/masthead.gif" width="774" height="85" alt="Cronkite Header" /></a>
     </div><!-- header -->
-    <div class="span-24 last linkbar">
-     
-<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/nav/home.jpg" width="120" height="30" alt="Home" /></a>
-<a href="<?php bloginfo('url'); ?>/about/"><img src="<?php bloginfo('template_directory'); ?>/img/nav/about.jpg" width="120" height="30" alt="About Cronkite News" /></a>
-<a href="<?php bloginfo('url'); ?>/archives/"><img src="<?php bloginfo('template_directory'); ?>/img/nav/stories.jpg" width="120" height="30" alt="Stories" /></a>
-<a href="<?php bloginfo('url'); ?>/recent-newswatch-newscasts/"><img src="<?php bloginfo('template_directory'); ?>/img/nav/newswatch.jpg" width="120" height="30" alt="Recent NewsWatch Newscasts" /></a>
-<a href="http://asu.news21.com"><img src="<?php bloginfo('template_directory'); ?>/img/nav/news21.jpg" width="120" height="30" alt="ASU News21" /></a>
-<a href="http://cronkite.asu.edu"><img src="<?php bloginfo('template_directory'); ?>/img/nav/cronkite.jpg" width="120" height="30" alt="Cronkite School" /></a>
-<a href="<?php bloginfo('url'); ?>/contact-cronkite-news"><img src="<?php bloginfo('template_directory'); ?>/img/nav/contact.jpg" width="120" height="30" alt="Contact Cronkite News" /></a>
-    </div><!-- linkbar -->
+    
+<div class="span-24 last linkbar">
+
+<div style="float: right; width: 300px;">
+<script>
+  (function() {
+    var cx = '003867095565438658128:1blfwbkqody';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+</div>
+
+	<div style="padding-top: 8px;">
+	<a href="<?php bloginfo('url'); ?>">HOME</a>
+	<a href="<?php bloginfo('url'); ?>/about/">ABOUT</a>
+	<a href="<?php bloginfo('url'); ?>/archives-by-month/">STORIES</a>
+	<a href="<?php bloginfo('url'); ?>/newswatch-archive/">NEWSCAST</a>
+	<a href="http://news21.com">NEWS21</a>
+	<a href="http://cronkite.asu.edu">CRONKITE</a>
+	</div>
+	
+
+
+</div><!-- linkbar -->
     <div class="span-24"> <!-- wrapper for main content -->

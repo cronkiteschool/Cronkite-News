@@ -29,6 +29,8 @@ remove_filter('the_content', 'wpautop');
 }
 add_action ('loop_start', 'disable_autop');
 
+remove_action('wp_head', 'wp_generator');
+
 //define('CFCT_DEBUG', true);
 define('CFCT_PATH', trailingslashit(TEMPLATEPATH));
 

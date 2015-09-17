@@ -24,7 +24,8 @@ $month = 0;
 $ul_open = false;
 
 global $post;
-$myposts = query_posts('posts_per_page=-1&orderby=post_date&order=DESC'); 
+//change posts_per_page to -1 to get all. Note you will probably run out memory
+$myposts = query_posts('posts_per_page=4500&orderby=post_date&order=DESC'); 
 
 //print_r ($myposts);
 ?>

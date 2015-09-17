@@ -1,0 +1,274 @@
+#aside {
+  float: left;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  margin: 10px 20px 6px 0;
+  position: relative;
+  width: 210px;
+  color: #000;
+  font: 1em "Trebuchet MS",Helvetica,Arial,sans-serif;
+  padding: 15px;
+  border: 1px solid #999999;
+  background-color: #D0D1E5;
+}
+
+.gallery_slide div, .gallery_slide span, .gallery_slide object, .gallery_slide h1, .gallery_slide h2, .gallery_slide h3, .gallery_slide p, .gallery_slide a, .gallery_slide cite, .gallery_slide img, .gallery_slide small, .gallery_slide strong, .gallery_slide b, .gallery_slide ul, .gallery_slide li, .gallery_slide label, .gallery_slide caption, tbody, .gallery_slide aside{
+  margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+
+}
+
+.gallery_slide ul{
+  list-style: none;
+}
+
+.gallery_slide {
+color: #000;
+font: .8em "Trebuchet MS",Helvetica,Arial,sans-serif;
+text-shadow: 0;
+
+}
+
+.thumb_click:hover{
+  cursor: pointer;
+}
+
+.gallery_clip li{
+  height: 215px;
+  width: 210px;
+}
+
+.gallery_clip,
+.gallery_clip a {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 100%;
+}
+.gallery_clip ul,
+.gallery_clip a ul {
+  position: relative;
+  zoom: 1;
+}
+.gallery_clip ul:before,
+.gallery_clip a ul:before {
+  content: '';
+  display: block;
+}
+.gallery_clip ul:after,
+.gallery_clip a ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gallery_clip li,
+.gallery_clip a li {
+  height: 210px;
+  width: 210px;
+  display: block;
+  float: left;
+}
+.gallery_clip img.big,
+.gallery_clip a img.big {
+  display: none;
+}
+.gallery_title {
+  display: none;
+}
+.single_slide_container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.image_area {
+  width: 100%;
+  margin: 0 auto;
+  zoom: 1;
+  display: block;
+}
+.image_area:before {
+  content: '';
+  display: block;
+}
+.image_area:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.image_area img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.caption_n_credit {
+  position: relative;
+  float: left;
+  display: block;
+  text-align: justify;
+  width: 100%;
+  height: 75px;
+  padding-top: 2px;
+  overflow: hidden;
+}
+.caption_n_credit .rm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  margin: 26px 0 0 0;
+  padding: 40px 0 0;
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, #333333));
+  background-image: -webkit-linear-gradient(top, transparent, #333333);
+  background-image: -moz-linear-gradient(top, transparent, #333333);
+  background-image: -ms-linear-gradient(top, transparent, #333333);
+  background-image: -o-linear-gradient(top, transparent, #333333);
+}
+.caption_n_credit small {
+  color: #887e70;
+  display: block;
+  text-align: right;
+  font-size: 80%;
+}
+.slide_thumbs {
+  width: 100%;
+  overflow: visible;
+  padding: 7px 0 0 0;
+  float: left;
+}
+.slide_thumbs ul {
+  width: 100%;
+}
+.slide_thumbs li {
+  float: left;
+  padding-right: 4px;
+}
+.slide_thumbs li a {
+  color: #666;
+}
+.thumb_click {
+  color: #666;
+}
+.current_thumb {
+  font-weight: bold;
+  color: #948b7d;
+}
+span .mycarousel-full {
+  display: -moz-inline-box;
+  display: inline-block;
+  margin: -3px 0 0 7px;
+  display: block;
+  text-indent: -3000px;
+  font-size: NaNpx;
+  float: right;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0);
+  width: 23px;
+  height: 20px;
+  background: url(../img/fullscreen.png) no-repeat;
+}
+.fullScreen {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.fullScreen .gallery_title {
+  display: block;
+  padding-top: 20px;
+  color: #000;
+  font-size: 220%;
+}
+.fullScreen .gallery_clip {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.fullScreen #slide_sections {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.fullScreen .single_slide_container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  float: left;
+  display: block;
+}
+.fullScreen .image_area {
+  width: inherit;
+  height: 90%;
+  min-height: 80%;
+  max-height: 80%;
+  zoom: 1;
+  display: block;
+  position: relative;
+  float: left;
+}
+.fullScreen .image_area:before {
+  content: '';
+  display: block;
+}
+.fullScreen .image_area:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.fullScreen .caption_n_credit {
+  position: absolute;
+  bottom: 0;
+  overflow: auto;
+  display: block;
+  clear: both;
+  text-align: center;
+  z-index: 5;
+  width: 100%;
+  height: 10%;
+  font-size: 130%;
+  background: #111;
+  color: #999;
+}
+.fullScreen .caption_n_credit p {
+  margin: 0 auto;
+  text-align: left;
+}
+.fullScreen .caption_n_credit .rm {
+  display: none;
+}
+.fullScreen .caption_n_credit small {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+.fullScreen .slide_thumbs {
+  margin: 0;
+  position: absolute;
+  height: 5%;
+  overflow: hidden;
+  bottom: 0;
+  margin-top: 10px;
+  font-size: 175%;
+  border-top: 1px solid #aaa;
+}
+.fullScreen .slide_thumbs li {
+  padding-right: 12px;
+}
+.fullScreen .current_thumb {
+  font-weight: bold;
+  padding: 0 6px;
+  color: #948b7d;
+  border: 1px solid #aaa;
+}
+.media-list {
+  color: #600000;
+  font: small-caps 1em "Trebuchet MS", Helvetica, Arial, sans-serif;
+}

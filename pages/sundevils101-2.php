@@ -11,8 +11,8 @@ get_header();
 
 ?>
 <div class="span-15 append-2 archives">
-<h1 class="singlehed" style="margin-bottom: 10px;">Sun Devils 101</h1>
-<h4 style="font-size: 14px; padding-bottom: 10px;">Sun Devils 101 is a sports magazine program produced by top broadcast students at the Cronkite School in partnership with Fox Sports Arizona. In this unique partnership, Sun Devils 101 staff work closely with FSN producers, videographers, editors and on-air talent. The program, produced three times each semester, airs regionally on FSN.</h4>
+<h1 class="singlehed" style="margin-bottom: 10px;">SportsWatch 101</h1>
+<h4 style="font-size: 14px; padding-bottom: 10px;">SportsWatch 101 is a sports magazine program produced by top broadcast students at the Cronkite School in partnership with Fox Sports Arizona. In this unique partnership, SportsWatch 101 staff work closely with FSN producers, videographers, editors and on-air talent. The program, produced three times each semester, airs regionally on Fox Sports Arizona.</h4>
 
 <?php
 

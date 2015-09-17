@@ -15,9 +15,21 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 // **********************************************************************
 
+if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
+if (CFCT_DEBUG) { cfct_banner(__FILE__); }
+
+get_header();
+
+cfct_loop('single');
+
+//comments_template();
+
 ?>
 
-<?php if (function_exists('sociable_html')) {
-    echo sociable_html();
-} ?>
- 
+<?php 
+
+get_sidebar('newscast');
+
+get_footer();
+
+?>

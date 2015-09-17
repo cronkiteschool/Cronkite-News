@@ -6,12 +6,13 @@
 		
 
 		
-		<p class="subhed" style="margin-bottom: 10px;">DOWNLOAD MOBILE APPS</p>
+		<p class="subhed" style="margin-bottom: 10px;">ACCESS MOBILE APPS</p>
 		
 		<p style="color: black;">
-		<a href="/mobile"><img src="<?php bloginfo('template_directory'); ?>/img/front_cn.jpg" width="72" alt="Cronkite News Mobile" /></a>
-		<a href="http://itunes.apple.com/us/app/arizona-political-directory/id369575859?mt=8" style="color: black; text-decoration: none;"><img src="<?php bloginfo('template_directory'); ?>/img/front_azpolitics.jpg" width="80" alt="AZ Politics iPhone Application" />
+		<a href="/mobile"><img src="<?php bloginfo('template_directory'); ?>/img/front_cn.jpg" width="85" alt="Cronkite News Mobile" /></a>
+        <a href="https://itunes.apple.com/us/app/az-elected/id570064693?ls=1&mt=8" style="color: black; text-decoration: none;"><img src="<?php bloginfo('template_directory'); ?>/img/az_elected_icon.png" width="80" alt="AZ Elected" />
+		<a href="http://smartphx.com" style="color: black; text-decoration: none;"><img src="<?php bloginfo('template_directory'); ?>/img/smartphx_touch_icon.png" width="80" alt="SmartPHX" />
 		<br />
-		Mobile apps for Cronkite News and directory of elected officials created by the New Media Innovation Lab</a></p>
+		Mobile apps for Cronkite News and SmartPHX created by the New Media Innovation Lab</a></p>
 	</div> <!-- explore -->
  

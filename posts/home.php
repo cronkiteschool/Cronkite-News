@@ -24,8 +24,8 @@ cfct_loop();
 
 //cfct_misc('nav-posts');
 
-get_sidebar('home');
+//get_sidebar('home');
 
-get_footer();
+//get_footer();
 
 ?>

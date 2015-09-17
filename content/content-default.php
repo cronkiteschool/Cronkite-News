@@ -26,6 +26,7 @@ $previousday = -1;
 ?>
 
 <div class="span-15 append-2 singlestory"> <!-- singlestory -->
+<h3 style="border: 1px solid #aaa; padding: 10px; background: #D0D1E5;">Cronkite News has moved to a new home at <a href="http://cronkitenews.azpbs.org">cronkitenews.azpbs.org</a>. Use this site to search archives from 2011 to May 2015. You can search the new site for current stories.</h3>
 
 <h1 class="singlehed"><?php the_title() ?></h1>
 <?php
@@ -35,7 +36,11 @@ if ($cn_pubed) {
 	echo $cn_pubed[0];
 	echo '</p>';
 }
+
+
+cfct_misc('sharethis'); 
 ?>
+
 <p class="byline">
 <span class="story_thedate">
 
@@ -122,7 +127,7 @@ if ($cn_pubed) {
 the_content(); 
 
 
-cfct_misc('sharethis'); 
+
 
 ?>
 

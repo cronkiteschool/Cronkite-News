@@ -9,13 +9,7 @@ function yoast_rss_date( $timestamp = null ) {
   $timestamp = ($timestamp==null) ? time() : $timestamp;
   echo date(DATE_RSS, $timestamp);
 }
- 
-// function yoast_rss_text_limit($string, $length, $replacer = '...') { 
-//   $string = strip_tags($string);
-//   if(strlen($string) > $length) 
-//     return (preg_match('/^(.*)\W.*$/', substr($string, 0, $length+1), $matches) ? $matches[1] : substr($string, 0, $length)) . $replacer;   
-//   return $string; 
-// }
+
  
 $posts = query_posts('showposts='.$numposts);
  
@@ -24,7 +18,7 @@ $lastpost = $numposts - 1;
 header("Content-Type: application/rss+xml; charset=UTF-8");
 
 ?>
-<?xml version="1.0"?><rss version="2.0">
+<?php print '<?xml version="1.0"?>'; ?><rss version="2.0">
 <channel>
   <title>Cronkite News Client Feed</title>
   <link>http://cronkitenews.asu.edu</link>
@@ -90,7 +84,7 @@ header("Content-Type: application/rss+xml; charset=UTF-8");
 	
 	//bylines done
 
-	echo 'Cronkite News Service<br /><br />';
+	echo 'Cronkite News<br /><br />';
 
     
 	echo $post->post_content.'<br/>';

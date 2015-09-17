@@ -25,10 +25,19 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <div class="span-7 last sidebar_inner">
 
+<?php include 'youtube.php'; ?>
+     
 <!-- STORY-RELATED CONTENT GOES HERE -->
 		<!-- Video -->	
+		
 	  <?php $cn_videofile = get_post_custom_values('video_file'); 
        if ($cn_videofile[0]) { //We have video
+       // Figure out if this is Vimeo or Cronkite News
+		   $url = parse_url($values[0]);
+			$player_height = 360;
+			if ($url[host] == "player.vimeo.com") {
+				$player_height = 394;	
+			}
        echo '<p class="subhed">VIDEO STORY</p>';
         $cn_videoposter = get_post_custom_values('video_poster_image');
 		$cn_videocredit = get_post_custom_values('video_credit');
@@ -37,14 +46,22 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	?>
       	
       	<div class="sidebar_image">
-      	<a href="<?php echo $cn_videofile[0]; ?>" rel="shadowbox;height=360;width=700" alt="<?php echo $cn_videocaption[0]; ?>" />
+      	<a href="<?php echo $cn_videofile[0]; ?>" rel="shadowbox;height=<?php echo $player_height; ?>;width=700" alt="<?php echo $cn_videocaption[0]; ?>" />
       	<img src="<?php echo $cn_videoposter[0]; ?>" width="270" alt="<?php echo $cn_videocaption[0]; ?>" />
       	<span class="overlay"><img src="<?php bloginfo('template_directory'); ?>/img/tp24.png" width="58" height="58" alt="Watch video" /></span><br />
       	</a>
       	<p class="sidecaption_video"><?php echo $cn_videocaption[0]; ?></p>
-
+      	<?php 
+      	$video_credit = get_post_custom_values('video_credit'); 
+      	if ($video_credit) {
+      	echo '<p class="photo_credit">Video story by ';
+      	echo $video_credit[0];
+		echo '</p>';
+		}
+		?>
       	
       	</div>
+      
       <?php	} ?>
       
       
@@ -55,6 +72,12 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		<!-- Video -->
 	  <?php $cns_videofile = get_post_custom_values('cns_video_file'); 
        if ($cns_videofile[0]) { //We have CNS video
+       // Figure out if this is Vimeo or Cronkite News
+		   $url = parse_url($values[0]);
+			$player_height = 360;
+			if ($url[host] == "player.vimeo.com") {
+				$player_height = 394;	
+			}
        echo '<p class="subhed">MORE ON THIS STORY</p>';
         $cns_videoposter = get_post_custom_values('cns_video_poster_image');
 		$cns_videocredit = get_post_custom_values('cns_video_credit');
@@ -63,14 +86,14 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	?>
       	
       	<div class="sidebar_image">
-      	<a href="<?php echo $cns_videofile[0]; ?>" rel="shadowbox;height=360;width=700" alt="<?php echo $cns_videocaption[0]; ?>" />
+      	<a href="<?php echo $cns_videofile[0]; ?>" rel="shadowbox;height=<?php echo $player_height; ?>;width=700" alt="<?php echo $cns_videocaption[0]; ?>" />
       	<img src="<?php echo $cns_videoposter[0]; ?>" width="270" alt="<?php echo $cns_videocaption[0]; ?>" />
       	<span class="overlay"><img src="<?php bloginfo('template_directory'); ?>/img/tp24.png" width="58" height="58" alt="Watch video" /></span><br />
       	</a>
       	<p class="sidecaption"><?php echo $cns_videocaption[0]; ?></p>
 
 		<?php
-		echo '<p class="photo_credit">By ';
+		echo '<p class="photo_credit">Video story by ';
       	echo $cns_videocredit[0];
       	echo '</p>';
 		?>
@@ -390,15 +413,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       
       <!-- END GLANCE BOX -->
       
-  <div class="searchbox sidefirst">
-    <p>SEARCH</p>
-    <form id="searchform" method="get" action="<?php bloginfo('url'); ?>/index.php">
-      <div>
-         <input type="text" name="s" id="s" style="width: 180px;" /><br />
-         <input type="submit" value="Search"/>
-      </div>
-     </form>
-     </div> <!-- end searchbox -->
+<?php cfct_misc('the-latest'); ?>
 
 <?php cfct_misc('sidebarlinks'); ?>
 
