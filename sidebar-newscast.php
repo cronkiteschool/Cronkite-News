@@ -24,8 +24,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <div class="span-7 last sidebar_inner">
 
-<?php include 'youtube.php'; ?>
-
 <!-- STORY-RELATED CONTENT GOES HERE -->
       <?php $cn_photo1 = get_post_custom_values('photo1'); 
        if ($cn_photo1[0]) { //Photo1      
@@ -332,4 +330,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       
       <!-- END GLANCE BOX -->
 
-    </div><!-- sidebar -->
+	<?php include 'youtube.php'; ?>
+
+</div><!-- sidebar -->

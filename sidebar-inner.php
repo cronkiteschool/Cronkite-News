@@ -23,8 +23,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 <!-- Sidebar for inner pages -->
 
 <div class="span-7 last sidebar_inner">
-
-<?php include 'youtube.php'; ?>
      
 <!-- STORY-RELATED CONTENT GOES HERE -->
 		<!-- Video -->	
@@ -412,4 +410,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       
       <!-- END GLANCE BOX -->
 
-    </div><!-- sidebar -->
+	<?php include 'youtube.php'; ?>
+
+</div><!-- sidebar -->

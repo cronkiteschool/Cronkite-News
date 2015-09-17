@@ -10,8 +10,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
 <div class="span-5 last sidebar">
 
-<?php include 'youtube.php'; ?>
-
 	<div class="special_reports_header">
 		<div class="special_reports_header_top"><div></div></div>
 			<div class="special_reports_special"><a href="<?php bloginfo('url'); ?>/special-reports-by-month/">SPECIAL</a></div>
@@ -69,5 +67,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		</div>
 
       <?php endwhile; ?>
+
+	<?php include 'youtube.php'; ?>
 
     </div><!-- sidebar -->
