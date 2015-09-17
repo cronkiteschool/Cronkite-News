@@ -66,32 +66,32 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); } ?>
       	</tr>
 		<tr class="whitetext">
       	<td style="vertical-align: top;">
-      	<a href="http://azcapitoltimes.com/">Arizona Capitol Times</a><br />
-      	<a href="http://www.azcentral.com/">Arizona Republic</a><br />
-      	<a href="http://www.eastvalleytribune.com/">East Valley Tribune</a><br />
-      	<a href="http://arizona.newszap.com/">Independent Newspapers</a><br />
-      	<a href="http://phoenix.bizjournals.com/phoenix/">Phoenix Business Journal</a><br />
-      	<a href="http://www.phoenixnewtimes.com/">Phoenix New Times</a><br />
+      	<a href="http://azcapitoltimes.com">Arizona Capitol Times</a><br />
+      	<a href="http://www.azcentral.com">Arizona Republic</a><br />
+      	<a href="http://www.eastvalleytribune.com">East Valley Tribune</a><br />
+      	<a href="http://arizona.newszap.com">Independent Newspapers</a><br />
+      	<a href="http://www.bizjournals.com/phoenix/">Phoenix Business Journal</a><br />
+      	<a href="http://www.phoenixnewtimes.com">Phoenix New Times</a><br />
       	</td>
 		<td style="vertical-align: top;">
-      	<a href="http://www.azfamily.com/">3TV</a><br />
-      	<a href="http://www.kpho.com/">CBS 5</a><br />
-      	<a href="http://www.myfoxphoenix.com/">FOX 10</a><br />
-      	<a href="http://www.azcentral.com/12news/">12 News</a><br />
-      	<a href="http://www.abc15.com/">ABC15</a>      	
+      	<a href="http://www.azfamily.com">3TV</a><br />
+      	<a href="http://www.kpho.com">CBS 5</a><br />
+      	<a href="http://www.fox10phoenix.com">FOX 10</a><br />
+      	<a href="http://www.12news.com">12 News</a><br />
+      	<a href="http://www.abc15.com">ABC15</a>      	
 		</td>
 		<td style="vertical-align: top;">
       	<a href="http://kjzz.org/">KJZZ</a><br />
-      	<a href="http://www.azpbs.org/horizon/index.php">Horizon (Eight)</a><br />
-      	<a href="http://www.myfoxphoenix.com/search?vendor=ez&qu=newsmaker+sunday">Newsmaker Sunday (FOX10)</a><br />
-      	<a href="http://www.azfamily.com/results/?search=site&searchbutton=Go&keywords=politics+unplugged">Politics Unplugged (3TV)</a><br />
-      	<a href="http://www.azcentral.com/results.php?catId=&aff=1100&searchkeyword=&searchcategory=*&cx=015840973018584549539%3A4mugrvjtm6k&cof=FORID%3A9&ie=UTF-8&q=sunday+square+off&address=">Sunday Square Off (12News)</a><br />
+      	<a href="http://www.azpbs.org/horizon/">Horizon (Eight)</a><br />
+      	<a href="http://www.fox10phoenix.com/newsmaker-sunday">Newsmaker Sunday (FOX10)</a><br />
+      	<a href="http://www.azfamily.com/category/297296/politics-unplugged">Politics Unplugged (3TV)</a><br />
+      	<a href="http://www.12news.com/local/sunday-square-off/">Sunday Square Off (12News)</a><br />
       	</td>
 		<td style="vertical-align: top;">
-      	<a href="http://www.foxnews.com/search-results/search?q=Arizona">FOX News</a><br />
-      	      	<a href="http://www.nbcnews.com/default.aspx?id=11881780&q=arizona&search=p&1=st&1">NBC News</a><br />
-      	<a href="http://topics.nytimes.com/top/news/national/usstatesterritoriesandpossessions/arizona/index.html?scp=1-spot&sq=arizona&st=cse">New York Times</a><br />
-      	<a href="http://www.npr.org/search/index.php?searchinput=ARIZONA">NPR</a><br />
+      	<a href="http://www.foxnews.com/search-results/search?q=Arizona&ss=fn&sort=latest&start=0">FOX News</a><br />
+      	<a href="http://www.nbcnews.com/search/arizona">NBC News</a><br />
+      	<a href="http://topics.nytimes.com/top/news/national/usstatesterritoriesandpossessions/arizona/index.html">New York Times</a><br />
+      	<a href="http://www.npr.org/templates/search/index.php?searchinput=ARIZONA&tabId=all&dateId=&sort=date">NPR</a><br />
       	<a href="http://find.politico.com/index.cfm?sort=date&reporters=&dt=all&key=ARIZONA">Politico</a><br />
       	</td>
 		<td style="vertical-align: top;">
