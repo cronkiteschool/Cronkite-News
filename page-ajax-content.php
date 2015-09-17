@@ -71,7 +71,7 @@ This page refreshes itself once per minute. You do not have to refresh. <span id
     </div>
 
     <div class="failed">
-        <a href="http://cronkitenewsonline.com/2010/11/voters-say-no-to-lieutenant-governor-for-arizona/"><div class="prop_num">111: </div>
+        <a href="<?php bloginfo('url'); ?>/2010/11/voters-say-no-to-lieutenant-governor-for-arizona/"><div class="prop_num">111: </div>
         <div class="slug">Lt. Governor</div></a>
     </div>
 
@@ -81,7 +81,7 @@ This page refreshes itself once per minute. You do not have to refresh. <span id
     </div>
 
     <div class="passed">
-        <a href="http://cronkitenewsonline.com/2010/11/voters-approve-secret-ballot-proposition-for-union-organizing/"><div class="prop_num">113: </div>
+        <a href="<?php bloginfo('url'); ?>/2010/11/voters-approve-secret-ballot-proposition-for-union-organizing/"><div class="prop_num">113: </div>
         <div class="slug">Union Ballots</div></a>
     </div>
 
@@ -104,7 +104,7 @@ This page refreshes itself once per minute. You do not have to refresh. <span id
 	<div id="legend">
 		<div class="key" style="color: #000000;">Key:</div> <div class="key" style="background-color:#339933;">passed</div>  <div class="key" style="background-color:#993333;">failed</div> <div class="key" style="background-color:#000000;">TBD</div>
 		</div>
-	<div id="read_more"><a href="http://cronkitenewsonline.com/2010/11/election-results/">See congressional and statewide election results</a></div>
+	<div id="read_more"><a href="<?php bloginfo('url'); ?>/2010/11/election-results/">See congressional and statewide election results</a></div>
 </div>
 </div>
    <div style="clear:both;width:100%;"></div>

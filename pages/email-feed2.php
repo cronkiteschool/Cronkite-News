@@ -9,7 +9,7 @@ header("Content-Type: application/rss+xml; charset=UTF-8");
 
 <channel>
   <title>Cronkite News Service</title>
-  <link>http://cronkitenewsonline.com/email-feed2/</link>
+  <link><?php bloginfo('url'); ?>/email-feed2/</link>
   <description>Updated feed for consumption by MailChimp.</description>
   <language>en-us</language>
   <pubDate><?php echo mysql2date('D, d M Y H:i:s +0000', get_lastpostmodified('GMT'), false); ?></pubDate>

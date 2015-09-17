@@ -13,7 +13,7 @@ header("Content-Type: application/rss+xml; charset=UTF-8");
 
 <channel>
   <title>Cronkite News Service</title>
-  <link>http://cronkitenewsonline.com/email-feed-front/</link>
+  <link><?php bloginfo('url'); ?>/email-feed-front/</link>
   <description>Feed for consumption by Campaign Monitor for front page list.</description>
   <language>en-us</language>
   <pubDate><?php yoast_rss_date( strtotime($ps[$lastpost]->post_date_gmt) ); ?></pubDate>

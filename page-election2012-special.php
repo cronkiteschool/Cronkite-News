@@ -27,15 +27,15 @@ get_header();
   <tr>
     <td><table width="100%" border="0" cellspacing="2" cellpadding="2">
       <tr>
-        <td width="270" rowspan="2" valign="top"><a href="http://cronkitenewsonline.com/election-coverage-2012/"><img src="http://cronkitenews.asu.edu/assets/images/12/11/7-election-front.jpg" alt="Cronkite News Service Special Election Day Coverage" border="0" /></a></td>
-        <td width="316"><h3><a href="http://cronkitenewsonline.com/2012/11/cronkite-news-election-day-coverage/">Cronkite News Election Day Coverage</a></h3></td>
+        <td width="270" rowspan="2" valign="top"><a href="<?php bloginfo('url'); ?>/election-coverage-2012/"><img src="http://cronkitenews.asu.edu/assets/images/12/11/7-election-front.jpg" alt="Cronkite News Service Special Election Day Coverage" border="0" /></a></td>
+        <td width="316"><h3><a href="<?php bloginfo('url'); ?>/2012/11/cronkite-news-election-day-coverage/">Cronkite News Election Day Coverage</a></h3></td>
       </tr>
       <tr>
         <td valign="top">
         <p class="topstories_byline">By Cronkite News Staff</p>
         <p class="story">If you missed any of the Election Day coverage by Cronkite News Service, including our live blog posts, results on Arizona races and propositions and the NewsWatch special Election Day newscast, go to our Election 2012 page. </p><br />
         <p style="clear:both; float:right; margin-right:10px;">
-<a href="http://cronkitenewsonline.com/2012/11/cronkite-news-election-day-coverage/">Read story.</a>
+<a href="<?php bloginfo('url'); ?>/2012/11/cronkite-news-election-day-coverage/">Read story.</a>
 </p>
         
         

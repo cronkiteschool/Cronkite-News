@@ -7,6 +7,6 @@
 ?>
 
 <?php
-	$res = curl_init("http://cronkitenewsonline.com/el2012/web.html");
+	$res = curl_init("<?php bloginfo('url'); ?>/el2012/web.html");
 	curl_exec($res);
 ?>

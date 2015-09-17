@@ -66,7 +66,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		<div id="dynamicresultssidebar">
 
 		<?php
-				$res = curl_init("http://cronkitenewsonline.com/el2012/web.html");
+				$res = curl_init("<?php bloginfo('url'); ?>/el2012/web.html");
 				curl_exec($res);
 		?>
 		</div>
