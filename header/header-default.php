@@ -107,7 +107,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 </div>
 	<div style="padding-top: 8px;">
 	<a href="http://cronkitenews.azpbs.org">HOME</a>
-	<a href="<?php bloginfo('url'); ?>/about/">ABOUT</a>
 	<a href="<?php bloginfo('url'); ?>/archives-by-month/">STORIES</a>
 	<a href="<?php bloginfo('url'); ?>/newswatch-archive/">NEWSCAST</a>
 	<a href="http://news21.com">NEWS21</a>

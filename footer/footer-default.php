@@ -30,7 +30,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); } ?>
       	</td></tr>
       	<tr>
       	<td>
-      	<a href="http://cronkitenews.azpbs.org/feed"><img src="<?php bloginfo('template_directory'); ?>/img/logo-rss.gif" alt="RSS" /><br /></a>RSS
+      	<a href="http://cronkitenews.azpbs.org/rss-feed"><img src="<?php bloginfo('template_directory'); ?>/img/logo-rss.gif" alt="RSS" /><br /></a>RSS
       	</td>
 		<td>
       	<a href="mailto:cronkitenews@asu.edu"><img src="<?php bloginfo('template_directory'); ?>/img/logo-email.gif" alt="E-mail" /><br /></a>Contact
