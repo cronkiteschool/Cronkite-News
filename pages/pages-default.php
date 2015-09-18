@@ -22,7 +22,7 @@ get_header();
 
 cfct_loop();
 
-comments_template();
+//comments_template();
 
 get_sidebar();
 get_footer();

@@ -38,7 +38,7 @@ the_date();
 
 echo get_the_author();
 
-comments_popup_link(__('No comments', 'carrington-jam'), __('1 comment', 'carrington-jam'), __('% comments', 'carrington-jam'));
+//comments_popup_link(__('No comments', 'carrington-jam'), __('1 comment', 'carrington-jam'), __('% comments', 'carrington-jam'));
 
 edit_post_link(__('Edit This', 'carrington-jam'), '', '');
 

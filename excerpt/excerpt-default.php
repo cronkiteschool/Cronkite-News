@@ -31,7 +31,7 @@ the_time('F j, Y');
 
 the_category(', ');
 
-comments_popup_link(__('No comments', 'carrington-jam'), __('1 comment', 'carrington-jam'), __('% comments', 'carrington-jam'));
+//comments_popup_link(__('No comments', 'carrington-jam'), __('1 comment', 'carrington-jam'), __('% comments', 'carrington-jam'));
 
 ?>
 </div><!-- .excerpt -->
