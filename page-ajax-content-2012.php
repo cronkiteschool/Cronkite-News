@@ -10,10 +10,8 @@
 This page refreshes itself once per minute. You do not have to refresh. <span id="ajaxloader" style="vertical-align: text-top;"></span>
 </div>
 
-
 <?php query_posts('category_name=Election2012Live&posts_per_page=-1'); ?>
-  <?php while (have_posts()) : the_post(); ?>
-
+<?php while (have_posts()) : the_post(); ?>
 
 <h1 style="font-size: 22px; font-weight: bold; padding-bottom: 0; margin-bottom: 5px; padding-top: 20px;"><?php the_title() ?></h1>
 <?php
@@ -25,7 +23,6 @@ if ($cn_pubed) {
 }
 ?>
 <p class="byline">
-
      <!-- Get the bylines -->
       <?php 
      	$cn_byline1 = get_post_custom_values('byline1');
@@ -58,7 +55,6 @@ if ($cn_pubed) {
      	
      	echo '<br /><span class="story_thedate">';
 
-
 	$dayofweek = the_time('l');
 	echo $dayofweek;
 	echo ', ';
@@ -67,8 +63,6 @@ if ($cn_pubed) {
 	<?php echo get_the_time(); ?>
 	<br />
 </span>
-     
-          
 
 <br /> 
 

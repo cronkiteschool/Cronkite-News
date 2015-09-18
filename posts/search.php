@@ -42,7 +42,6 @@ else {
 
 while (have_posts()) : the_post();
 
-
 echo '<p class="archivehed">';
 echo '<a href="';
 echo the_permalink();
@@ -64,9 +63,8 @@ echo '</a></p>';
      	echo $cn_byline1[0];
      	echo '</span>';
 		echo '</a>';
-     	
+
      	if ($cn_byline3) { //We have three bylines
-     		
      		echo ', ';
 			echo '<a href="mailto:';
 			echo $cn_email2[0];
@@ -83,7 +81,7 @@ echo '</a></p>';
      	echo '</span>';
 			echo '</a>';			
      	}
-     	
+
      	if ($cn_byline2 && !$cn_byline3) { //Two bylines
      		echo ' and ';
 			echo '<a href="mailto:';
@@ -95,27 +93,21 @@ echo '</a></p>';
 			echo '</a>';
      	}
 
-
-
 echo '<span class="story_thedate"> – ';
-
-
 
 	$dayofweek = the_time('l');
 	echo $dayofweek;
 	echo ', ';
 
 	if (function_exists('ap_date')) { ap_date(); } else { the_date(); } 
-	
+
 	echo '</span>';
-	
 	echo '</p>';
 
 $cn_blurb = get_post_custom_values('blurb');
 echo '<p>';
 echo $cn_blurb[0];
 echo '</p>';
-
 }
 
 $cn_blurb = get_post_custom_values('episode_blurb');
@@ -125,24 +117,18 @@ if ($cn_blurb) { //This must be a NewsWatch newscast, so print the blurb
 	echo $cn_blurb[0];
 	echo '</p>';
 }
-
 ?>
 </p>
 
 <?php
-
 endwhile;
 //cfct_loop();
 //cfct_misc('nav-posts');
-
 ?>
 
 </div> <!-- end main content -->
 
 <?php
-
 get_sidebar('archives');
-
 get_footer();
-
 ?>

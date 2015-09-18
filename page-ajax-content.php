@@ -17,7 +17,6 @@ This page refreshes itself once per minute. You do not have to refresh. <span id
 <style type="text/css">
 #props { position: relative; width: 580px; }
 
-
 #props h2, { font-family: Helvetica Neue, sans-serif; padding: 10 0px 0px 10px; margin: 0px; font-size: 20pt; font-weight: 500; }
 .explainer { font-weight: 200; font-size: 10pt; }
 #title {position: absolute; text-align: center; left: 5; color: #000000; font-weight: 500; font-family: sans-serif; line-height: 100%; font-size: 20pt; padding: 3px; margin: 0px;}
@@ -109,12 +108,10 @@ This page refreshes itself once per minute. You do not have to refresh. <span id
 </div>
    <div style="clear:both;width:100%;"></div>
 
-
 <!-- END PROPS -->
 
 <?php query_posts('category_name=Election2010&posts_per_page=-1'); ?>
   <?php while (have_posts()) : the_post(); ?>
-
 
 <h1 style="font-size: 22px; font-weight: bold; padding-bottom: 0; margin-bottom: 5px; padding-top: 20px;"><?php the_title() ?></h1>
 <?php
@@ -126,43 +123,38 @@ if ($cn_pubed) {
 }
 ?>
 <p class="byline">
-
-     <!-- Get the bylines -->
-      <?php 
-     	$cn_byline1 = get_post_custom_values('byline1');
-     	$cn_byline2 = get_post_custom_values('byline2');
-     	$cn_byline3 = get_post_custom_values('byline3');
-     	
-     	echo 'By ';
-		echo '<span class="upper">';
-     	echo $cn_byline1[0];
-     	echo '</span>';
-     	
-     	if ($cn_byline3) { //We have three bylines
-     		
-		echo ', ';
-     	echo '<span class="upper">';
-     	echo $cn_byline2[0];
-     	echo '</span>';
+ <!-- Get the bylines -->
+  <?php 
+	$cn_byline1 = get_post_custom_values('byline1');
+	$cn_byline2 = get_post_custom_values('byline2');
+	$cn_byline3 = get_post_custom_values('byline3');
+	
+	echo 'By ';
+	echo '<span class="upper">';
+	echo $cn_byline1[0];
+	echo '</span>';
+	
+	if ($cn_byline3) { //We have three bylines
+		
+	echo ', ';
+	echo '<span class="upper">';
+	echo $cn_byline2[0];
+	echo '</span>';
+	echo ' and ';
+	echo '<span class="upper">';
+	echo $cn_byline3[0];
+	echo '</span>';			
+	}
+	
+	if ($cn_byline2 && !$cn_byline3) { //Two bylines
 		echo ' and ';
-     	echo '<span class="upper">';
-     	echo $cn_byline3[0];
-     	echo '</span>';			
-     	}
-     	
-     	if ($cn_byline2 && !$cn_byline3) { //Two bylines
-     		echo ' and ';
-     	echo '<span class="upper">';
-     	echo $cn_byline2[0];
-     	echo '</span>';
-     	}
-     ?>
-          
+	echo '<span class="upper">';
+	echo $cn_byline2[0];
+	echo '</span>';
+	}
+ ?>
 
 <br /> 
-
-
-
 
 </p>
 

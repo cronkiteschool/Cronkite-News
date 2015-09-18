@@ -22,7 +22,6 @@ global $previousday, $authordata;
 
 // Causes the_date to display every time, instead of just once per day.
 $previousday = -1;
-
 ?>
 
 <div class="span-15 append-2 singlestory"> <!-- singlestory -->
@@ -35,7 +34,6 @@ if ($cn_pubed) {
 	echo $cn_pubed[0];
 	echo '</p>';
 }
-
 
 cfct_misc('sharethis'); 
 ?>
@@ -82,12 +80,9 @@ cfct_misc('sharethis');
      ?>
           
 
-<br /> 
-
-
+<br />
 
 <?php $values = get_post_custom_values('credit'); 
-
  if ($values) { /*The story has a custom credit*/
 	echo $values[0];
 	}
@@ -97,7 +92,7 @@ cfct_misc('sharethis');
  ?>
 </p>
 
-	      <!-- START GLANCE BOX -->
+	<!-- START GLANCE BOX -->
       <?php 
       $boxinpage = get_post_custom_values('glance_box_in_page');
       
@@ -128,10 +123,10 @@ the_content();
 <!-- Support for Brandon's slideshow viewer -->
 <!-- Has to be in its own template instead of inside posts to avoid breaking RSS feed to client site -->
 <script type="text/javascript">
-            $(document).ready(function() {
-                var agallery = make_slide_gallery($('div.gallery_slide'), 210, 215);
-        	$('div#slide_sections').show();
-        });
-        </script>
+	$(document).ready(function() {
+		var agallery = make_slide_gallery($('div.gallery_slide'), 210, 215);
+	$('div#slide_sections').show();
+});
+</script>
 
 </div>

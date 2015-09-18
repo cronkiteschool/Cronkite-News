@@ -76,14 +76,9 @@ if ($cn_pubed) {
      	echo '</span>';
      	}
      ?>
-          
-
-<br /> 
-
-
+<br />
 
 <?php $values = get_post_custom_values('credit'); 
-
  if ($values) { /*The story has a custom credit*/
 	echo $values[0];
 	}
@@ -92,8 +87,7 @@ if ($cn_pubed) {
 	}
  ?>
 </p>
-
-	      <!-- START GLANCE BOX -->
+	<!-- START GLANCE BOX -->
       <?php 
       $boxinpage = get_post_custom_values('glance_box_in_page');
       
@@ -120,7 +114,6 @@ if ($cn_pubed) {
       // End Glance Box
 
 the_content(); 
-
 
 cfct_misc('sharethis'); 
 

@@ -22,7 +22,6 @@ global $previousday, $authordata;
 
 // Causes the_date to display every time, instead of just once per day.
 $previousday = -1;
-
 ?>
 
 <div class="span-15 append-2 singlestory"> <!-- singlestory -->
@@ -36,7 +35,6 @@ if ($cn_pubed) {
 	echo $cn_pubed[0];
 	echo '</p>';
 }
-
 
 cfct_misc('sharethis'); 
 ?>
@@ -80,25 +78,21 @@ cfct_misc('sharethis');
      	echo $cn_byline2[0];
      	echo '</span>';
      	}
-     ?>
-          
+?>
 
 <br /> 
 
-
-
 <?php $values = get_post_custom_values('credit'); 
-
  if ($values) { /*The story has a custom credit*/
 	echo $values[0];
 	}
 	else {
 		echo 'Cronkite News';
 	}
- ?>
+?>
 </p>
 
-	      <!-- START GLANCE BOX -->
+	<!-- START GLANCE BOX -->
       <?php 
       $boxinpage = get_post_custom_values('glance_box_in_page');
       
@@ -125,10 +119,6 @@ cfct_misc('sharethis');
       // End Glance Box
 
 the_content(); 
-
-
-
-
 ?>
 
 </div>

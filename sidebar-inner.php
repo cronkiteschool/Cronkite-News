@@ -23,10 +23,10 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 <!-- Sidebar for inner pages -->
 
 <div class="span-7 last sidebar_inner">
-     
+
 <!-- STORY-RELATED CONTENT GOES HERE -->
 		<!-- Video -->	
-		
+
 	  <?php $cn_videofile = get_post_custom_values('video_file'); 
        if ($cn_videofile[0]) { //We have video
        // Figure out if this is Vimeo or Cronkite News
@@ -39,9 +39,8 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
         $cn_videoposter = get_post_custom_values('video_poster_image');
 		$cn_videocredit = get_post_custom_values('video_credit');
 		$cn_videocaption = get_post_custom_values('video_caption');
-       
       	?>
-      	
+
       	<div class="sidebar_image">
       	<a href="<?php echo $cn_videofile[0]; ?>" rel="shadowbox;height=<?php echo $player_height; ?>;width=700" alt="<?php echo $cn_videocaption[0]; ?>" />
       	<img src="<?php echo $cn_videoposter[0]; ?>" alt="<?php echo $cn_videocaption[0]; ?>" />
@@ -56,16 +55,13 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		echo '</p>';
 		}
 		?>
-      	
+
       	</div>
-      
+
       <?php	} ?>
-      
-      
+
       <!-- End video -->
-      
-	
-	
+
 		<!-- Video -->
 	  <?php $cns_videofile = get_post_custom_values('cns_video_file'); 
        if ($cns_videofile[0]) { //We have CNS video
@@ -79,9 +75,8 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
         $cns_videoposter = get_post_custom_values('cns_video_poster_image');
 		$cns_videocredit = get_post_custom_values('cns_video_credit');
 		$cns_videocaption = get_post_custom_values('cns_video_caption');
-       
       	?>
-      	
+
       	<div class="sidebar_image">
       	<a class="video_link" href="<?php echo $cns_videofile[0]; ?>" rel="shadowbox;height=<?php echo $player_height; ?>;width=700" alt="<?php echo $cns_videocaption[0]; ?>" />
       	<img src="<?php echo $cns_videoposter[0]; ?>" alt="<?php echo $cns_videocaption[0]; ?>" />
@@ -94,13 +89,12 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo $cns_videocredit[0];
       	echo '</p>';
 		?>
-      	
+
       	</div>
       <?php	} ?>
-      
-      
+
       <!-- End video -->	
-	
+
       <?php $cn_photo1 = get_post_custom_values('photo1'); 
        if ($cn_photo1[0]) { //Photo1      
        	$cn_thumb1 = get_post_custom_values('photo1_thumb'); 
@@ -128,7 +122,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo2 = get_post_custom_values('photo2'); 
        if ($cn_photo2[0]) { //Photo2   
        	$cn_thumb2 = get_post_custom_values('photo2_thumb'); 
@@ -156,7 +150,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo3 = get_post_custom_values('photo3'); 
        if ($cn_photo3[0]) { //Photo3
        	$cn_thumb3 = get_post_custom_values('photo3_thumb'); 
@@ -184,7 +178,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo4 = get_post_custom_values('photo4'); 
        if ($cn_photo4[0]) { //Photo4
        	$cn_thumb4 = get_post_custom_values('photo4_thumb'); 
@@ -212,7 +206,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo5 = get_post_custom_values('photo5'); 
        if ($cn_photo5[0]) { //Photo5
        	$cn_thumb5 = get_post_custom_values('photo5_thumb'); 
@@ -240,7 +234,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo6 = get_post_custom_values('photo6'); 
        if ($cn_photo6[0]) { //Photo6
        	$cn_thumb6 = get_post_custom_values('photo6_thumb'); 
@@ -268,7 +262,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo7 = get_post_custom_values('photo7'); 
        if ($cn_photo7[0]) { //Photo7
        	$cn_thumb7 = get_post_custom_values('photo7_thumb'); 
@@ -297,7 +291,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	}
       ?>
 
-
       <?php $cn_photo8 = get_post_custom_values('photo8'); 
        if ($cn_photo8[0]) { //Photo8
        	$cn_thumb8 = get_post_custom_values('photo8_thumb'); 
@@ -325,7 +318,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo9 = get_post_custom_values('photo9'); 
        if ($cn_photo9[0]) { //Photo9
        	$cn_thumb9 = get_post_custom_values('photo9_thumb'); 
@@ -353,7 +346,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '</div>';
       	}
       ?>
-      
+
       <?php $cn_photo10 = get_post_custom_values('photo10'); 
        if ($cn_photo10[0]) { //Photo5
        	$cn_thumb10 = get_post_custom_values('photo10_thumb'); 
@@ -383,7 +376,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       ?>
 
       <!-- END OF PIX -->
-      
+
       <!-- START GLANCE BOX -->
       <?php 
       $boxinpage = get_post_custom_values('glance_box_in_page');
@@ -404,10 +397,10 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 				echo '</div>';
 			}
       } 
-      
+
       // End Glance Box
       ?>       
-      
+
       <!-- END GLANCE BOX -->
 
 	<?php include 'youtube.php'; ?>
