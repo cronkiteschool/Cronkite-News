@@ -23,17 +23,17 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); } ?>
       	<table class="contactus" style="margin-left: -30px;">
       	<tr>
       	<td>
-      	<a href="http://www.facebook.com/#!/cronkitenewsonline?ref=ts"><img src="<?php bloginfo('template_directory'); ?>/img/logo-facebook.gif" width="45" height="45" alt="Facebook" /></a><br />Facebook
+      	<a href="http://www.facebook.com/#!/cronkitenewsonline?ref=ts"><img src="<?php bloginfo('template_directory'); ?>/img/logo-facebook.gif" alt="Facebook" /></a><br />Facebook
       	</td>
 		<td>
-      	<a href="http://twitter.com/cronkitenews"><img src="<?php bloginfo('template_directory'); ?>/img/logo-twitter.gif" width="45" height="45" alt="Twitter" /><br /></a>Twitter
+      	<a href="http://twitter.com/cronkitenews"><img src="<?php bloginfo('template_directory'); ?>/img/logo-twitter.gif" alt="Twitter" /><br /></a>Twitter
       	</td></tr>
       	<tr>
       	<td>
-      	<a href="http://cronkitenews.azpbs.org/feed"><img src="<?php bloginfo('template_directory'); ?>/img/logo-rss.gif" width="45" height="45" alt="RSS" /><br /></a>RSS
+      	<a href="http://cronkitenews.azpbs.org/feed"><img src="<?php bloginfo('template_directory'); ?>/img/logo-rss.gif" alt="RSS" /><br /></a>RSS
       	</td>
 		<td>
-      	<a href="mailto:cronkitenews@asu.edu"><img src="<?php bloginfo('template_directory'); ?>/img/logo-email.gif" width="45" height="45" alt="E-mail" /><br /></a>Contact
+      	<a href="mailto:cronkitenews@asu.edu"><img src="<?php bloginfo('template_directory'); ?>/img/logo-email.gif" alt="E-mail" /><br /></a>Contact
       	</td>
 		</tr>
 		</table>

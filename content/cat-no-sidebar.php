@@ -101,7 +101,7 @@ if ($cn_pubed) {
       
 		  $values = get_post_custom_values('glance_box_headline'); 
 		   if ($values[0]) { 
-			echo '<div style="float: right; width: 250px; border: 1px solid #aaa; padding: 10px; margin-left: 10px; background: #D0D1E5;">';
+			echo '<div class="related_stories">';
 			
 			echo '<div class="glance_box_headline_in_page">';
 	

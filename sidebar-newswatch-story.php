@@ -39,7 +39,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb1[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption1[0];
       	echo '" title="';
       	echo $caption1[0];
@@ -67,7 +67,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb2[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption2[0];
       	echo '" title="';
       	echo $caption2[0];
@@ -95,7 +95,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb3[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption3[0];
       	echo '" title="';
       	echo $caption3[0];
@@ -123,7 +123,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb4[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption4[0];
       	echo '" title="';
       	echo $caption4[0];
@@ -151,7 +151,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb5[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption5[0];
       	echo '" title="';
       	echo $caption5[0];
@@ -179,7 +179,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb6[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption6[0];
       	echo '" title="';
       	echo $caption6[0];
@@ -207,7 +207,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb7[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption7[0];
       	echo '" title="';
       	echo $caption7[0];
@@ -236,7 +236,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb8[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption8[0];
       	echo '" title="';
       	echo $caption8[0];
@@ -264,7 +264,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb9[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption9[0];
       	echo '" title="';
       	echo $caption9[0];
@@ -292,7 +292,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb10[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption10[0];
       	echo '" title="';
       	echo $caption10[0];

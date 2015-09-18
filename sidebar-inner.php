@@ -44,7 +44,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	
       	<div class="sidebar_image">
       	<a href="<?php echo $cn_videofile[0]; ?>" rel="shadowbox;height=<?php echo $player_height; ?>;width=700" alt="<?php echo $cn_videocaption[0]; ?>" />
-      	<img src="<?php echo $cn_videoposter[0]; ?>" width="270" alt="<?php echo $cn_videocaption[0]; ?>" />
+      	<img src="<?php echo $cn_videoposter[0]; ?>" alt="<?php echo $cn_videocaption[0]; ?>" />
       	<span class="overlay"><img src="<?php bloginfo('template_directory'); ?>/img/tp24.png" width="58" height="58" alt="Watch video" /></span><br />
       	</a>
       	<p class="sidecaption_video"><?php echo $cn_videocaption[0]; ?></p>
@@ -83,8 +83,8 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	?>
       	
       	<div class="sidebar_image">
-      	<a href="<?php echo $cns_videofile[0]; ?>" rel="shadowbox;height=<?php echo $player_height; ?>;width=700" alt="<?php echo $cns_videocaption[0]; ?>" />
-      	<img src="<?php echo $cns_videoposter[0]; ?>" width="270" alt="<?php echo $cns_videocaption[0]; ?>" />
+      	<a class="video_link" href="<?php echo $cns_videofile[0]; ?>" rel="shadowbox;height=<?php echo $player_height; ?>;width=700" alt="<?php echo $cns_videocaption[0]; ?>" />
+      	<img src="<?php echo $cns_videoposter[0]; ?>" alt="<?php echo $cns_videocaption[0]; ?>" />
       	<span class="overlay"><img src="<?php bloginfo('template_directory'); ?>/img/tp24.png" width="58" height="58" alt="Watch video" /></span><br />
       	</a>
       	<p class="sidecaption"><?php echo $cns_videocaption[0]; ?></p>
@@ -113,7 +113,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb1[0];
-      	echo '" width="270" alt="';
+      	echo ' "alt="';
       	echo $caption1[0];
       	echo '" title="';
       	echo $caption1[0];
@@ -141,7 +141,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb2[0];
-      	echo '" width="270" alt="';
+      	echo ' "alt="';
       	echo $caption2[0];
       	echo '" title="';
       	echo $caption2[0];
@@ -169,7 +169,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb3[0];
-      	echo '" width="270" alt="';
+      	echo ' "alt="';
       	echo $caption3[0];
       	echo '" title="';
       	echo $caption3[0];
@@ -197,7 +197,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb4[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption4[0];
       	echo '" title="';
       	echo $caption4[0];
@@ -225,7 +225,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb5[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption5[0];
       	echo '" title="';
       	echo $caption5[0];
@@ -253,7 +253,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb6[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption6[0];
       	echo '" title="';
       	echo $caption6[0];
@@ -281,7 +281,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb7[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption7[0];
       	echo '" title="';
       	echo $caption7[0];
@@ -310,7 +310,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb8[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption8[0];
       	echo '" title="';
       	echo $caption8[0];
@@ -338,7 +338,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb9[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption9[0];
       	echo '" title="';
       	echo $caption9[0];
@@ -366,7 +366,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
       	echo '" >';
       	echo '<img src="';
       	echo $cn_thumb10[0];
-      	echo '" width="270" alt="';
+      	echo '" alt="';
       	echo $caption10[0];
       	echo '" title="';
       	echo $caption10[0];
