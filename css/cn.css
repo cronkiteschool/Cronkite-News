@@ -959,7 +959,15 @@ margin-top: 10px;
 
 @media screen and (max-width: 1000px){
 	/* For mobile phones: */
-    img { max-width: 100%; }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
 
 	div {
         overflow: hidden;
