@@ -29,7 +29,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 	<!-- Cronkite News -->
 	  <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
 	  <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon-129.png" />
-	  
+
 	<!-- Bow down to our Facebook masters -->
 		<meta property="og:url" content="<?php the_permalink() ?>"/>  
 		<meta property="og:title" content="<?php single_post_title(''); ?>" />  
@@ -50,15 +50,16 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		echo '<meta property="og:image" content="' . $shareimage[0] . '" />';
 		?>		  
 	  <!-- End Facebook OG tags -->
-	  
-	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/screen.css" type="text/css" media="screen, projection" />
-	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/print.css" type="text/css" media="print" />
-	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cn.css" type="text/css" media="screen, projection" />
-		  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/quester.css" type="text/css" media="screen, projection" />
-	  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/li-scroller.css" type="text/css" media="screen" /> 
-	  <!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-	  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.css" />
-	 
+
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cn.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/quester.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/li-scroller.css" type="text/css" media="screen" /> 
+	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url') ?>" />
+	<!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.css" />
+
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.js"></script>
 	<script type="text/javascript">
 		Shadowbox.init(
@@ -66,10 +67,8 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 			}
 		);
 	</script>
-	
-	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url') ?>" />
-	
-	<meta name="viewport" content="width=960" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Start wp_head -->
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>-->
@@ -80,16 +79,15 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 	<?php wp_head(); ?>
 	<!-- End wp_head -->
 </head>
-
 <body>
 
 <?php cfct_misc('facebook-googleplus'); ?>
 
-  <div class="container"> <!-- showgrid -->
+<div class="container"> <!-- showgrid -->
     <div class="span-24 last header">
       <a href="http://cronkitenews.azpbs.org"><img src="<?php bloginfo('template_directory'); ?>/img/masthead.gif" alt="Cronkite Header" /></a>
     </div><!-- header -->
-    
+ 
 <div class="span-24 last linkbar">
 
 <div class="search-box">
@@ -107,7 +105,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 </script>
 <gcse:searchbox-only></gcse:searchbox-only>
 </div>
-
 	<div style="padding-top: 8px;">
 	<a href="http://cronkitenews.azpbs.org">HOME</a>
 	<a href="<?php bloginfo('url'); ?>/about/">ABOUT</a>
@@ -116,6 +113,5 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 	<a href="http://news21.com">NEWS21</a>
 	<a href="http://cronkite.asu.edu">CRONKITE</a>
 	</div>
-
 </div><!-- linkbar -->
     <div class="span-24"> <!-- wrapper for main content -->
