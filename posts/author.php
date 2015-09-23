@@ -44,7 +44,7 @@ if (have_posts()) {
 rewind_posts();
 
 cfct_loop();
-cfct_misc('nav-posts');
+//cfct_misc('nav-posts');
 
 get_sidebar();
 

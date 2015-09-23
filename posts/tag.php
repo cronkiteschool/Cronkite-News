@@ -29,7 +29,7 @@ $tag_title = '<a href="'.get_tag_link(intval(get_query_var('tag_id'))).'" title=
 <?php
 
 cfct_loop();
-cfct_misc('nav-posts');
+//cfct_misc('nav-posts');
 
 get_sidebar();
 

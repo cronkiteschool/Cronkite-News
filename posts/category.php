@@ -31,7 +31,7 @@ $cat_title = '<a href="'.get_category_link(intval(get_query_var('cat'))).'" titl
 echo category_description();
 
 cfct_loop();
-cfct_misc('nav-posts');
+//cfct_misc('nav-posts');
 
 get_sidebar();
 
