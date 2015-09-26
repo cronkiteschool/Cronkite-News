@@ -14,6 +14,6 @@ get_header();
 
 <p class="teaser"><strong>You have two options:</strong></p>
 <p class="teaser">Visit our new site at <a href="http://cronkitenews.azpbs.org">cronkitenews.azpbs.org.</a>
-<p class="teaser">Search our <a href="/archives-by-month">archives 2011-2014.</a>
+<p class="teaser">Search our <a href="/archives-by-month/">archives 2011-2014.</a>
 
 </div>
