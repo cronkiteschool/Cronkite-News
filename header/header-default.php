@@ -51,31 +51,9 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		?>		  
 	  <!-- End Facebook OG tags -->
 
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/screen.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/print.css" type="text/css" media="print" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cn.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/quester.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/li-scroller.css" type="text/css" media="screen" /> 
-	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url') ?>" />
-	<!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.css" />
-
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/shadowbox/shadowbox.js"></script>
-	<script type="text/javascript">
-		Shadowbox.init(
-			{overlayOpacity: 0.8
-			}
-		);
-	</script>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Start wp_head -->
-	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
-	<script src="<?php bloginfo('template_directory'); ?>/js/quester/fullscreen.js" type="text/javascript"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/js/quester/gallery.js" type="text/javascript"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.li-scroller.1.0.js" type="text/javascript"></script>
 	<?php wp_head(); ?>
 	<!-- End wp_head -->
 </head>
@@ -91,18 +69,6 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 <div class="span-24 last linkbar">
 
 <div class="search-box">
-<script>
-  (function() {
-    var cx = '003867095565438658128:1blfwbkqody';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
 <gcse:searchbox-only></gcse:searchbox-only>
 </div>
 	<div style="padding-top: 8px;">
