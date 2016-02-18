@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/osx,windows,linux
+# Created by https://www.gitignore.io/api/osx,linux,windows
 
 ### OSX ###
 .DS_Store
@@ -28,6 +28,16 @@ Temporary Items
 .apdisk
 
 
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+
 ### Windows ###
 # Windows image file caches
 Thumbs.db
@@ -47,13 +57,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-
-### Linux ###
-*~
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
