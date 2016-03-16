@@ -84,6 +84,10 @@ remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wp_shortlink_wp_head' );
 remove_action( 'template_redirect', 'wp_shortlink_header' );
 
+// Remove smart quotes
+remove_filter(‘the_content’, ‘wptexturize’);
+remove_filter(‘the_title’, ‘wptexturize’);
+
 //define('CFCT_DEBUG', true);
 define('CFCT_PATH', trailingslashit(TEMPLATEPATH));
 
