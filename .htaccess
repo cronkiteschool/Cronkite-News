@@ -2,6 +2,8 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 
+Redirect permanent /HookedAZ http://hookedaz.cronkitenewsonline.com
+
 RewriteRule ^2015/04/downtown-phoenix-businesses-move-“forward”-as-more-mega-events-loom/?$ 2015/04/downtown-phoenix-businesses-move-forward-as-more-mega-events-loom/index.html [R=301,L,NC]
 RewriteRule ^2015/04/arizona-enjoying-three-year-run-as-country’s-sports-mecca/?$ 2015/04/arizona-enjoying-three-year-run-as-countrys-sports-mecca/index.html [R=301,L,NC]
 RewriteRule ^2015/04/after-the-super-bowl-what’s-next-for-glendale/?$ 2015/04/after-the-super-bowl-whats-next-for-glendale/index.html [R=301,L,NC]
